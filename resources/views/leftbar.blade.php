@@ -7,16 +7,19 @@
                 <span id="text-img">Upload Image</span></div>
             </div>
         </div>
-        <input id="profile-input"  type="file" class="hidden uploadWithID" onChange="img_pathUrl(this);"  name="profile-img"  />
+        <input id="profile-input"  type="file" class="hidden uploadWithID"   name="profile-img"  />
 </a>
 
 
-<div class="row">
+
+ 
+
+<div class="row profileEditor" id="profileEditor">
     
    <div class="col col-sm-12 col-md-12 col-lg-12 borderTop">
         <div class="row">
             <div class="col col-sm-12 col-md-12 col-lg-12" >
-                <textarea id="profileId"  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                <textarea style="margin-left: -15px" id="profileId"  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
             </div>
         </div>
     </div> 

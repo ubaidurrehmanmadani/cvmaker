@@ -24,3 +24,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//// SUmmary Routes
+Route::post('/updateSummary', [App\Http\Controllers\UserController::class,'updateSummary']);
+Route::get('/getSummary', [App\Http\Controllers\UserController::class,'getSummary']);
+
+
+
+//// Work Experience Routes
+Route::post('/addWorkExperience', [App\Http\Controllers\WorkExperienceController::class,'addWorkExperience']);
+Route::post('/updateWorkExperience', [App\Http\Controllers\WorkExperienceController::class,'updateWorkExperience']);
+Route::get('/getWorkExperience', [App\Http\Controllers\WorkExperienceController::class,'getWorkExperience']);
+
